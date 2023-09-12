@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B&S Services</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-      </head>
-        <body>
- <h1>our background</h1>
-    <p> We are two teenagers that have had a dream to own our own business with the intentions to deliver high quality work to our customers <a href="#">link</a>.</p>
-</body>
-</html>
-{
+    <style>
+        /* Global Styles */
+        body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px;
             text-align: center;
+            padding: 10px;
         }
 
         nav {
             background-color: #444;
             color: #fff;
-            padding: 10px;
             text-align: center;
+            padding: 10px;
         }
 
         nav ul {
@@ -37,36 +36,74 @@
             margin-right: 20px;
         }
 
-        main {
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff5733;
+        }
+
+        .content {
             padding: 20px;
         }
 
         footer {
             background-color: #333;
             color: #fff;
-            padding: 10px;
             text-align: center;
+            padding: 10px;
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Text Box Styles */
+        .textbox {
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Website Header</h1>
+        <h1>B&S Services</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+                <a href="#">Our Options & Pricing</a>
+                <div class="dropdown-content">
+                    <a href="#">Pricing</a>
+                    <a href="#">Cleaning Options</a>
+                </div>
+            </li>
         </ul>
     </nav>
-    <main>
-        <h2>Welcome to Your Website</h2>
-        <p>This is a basic website template. You can edit this content to create your website.</p>
-    </main>
+    <div class="content">
+        <div class="textbox">
+            <h2>Our Story</h2>
+            <p>We are two teenagers that have had a dream to own our own business with the intentions to deliver high quality work to our customers.</p>
+        </div>
+    </div>
     <footer>
-        &copy; 2023 Your Website Name
+        &copy; 2023 B&S Services
     </footer>
 </body>
 </html>
